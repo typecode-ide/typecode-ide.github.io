@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TypeCode - Download Code IDE</title>
+  <meta name="description" content="minimalistic but powerful code editor" />
+  <meta name="keywords" content="TypeCode, text editor" />
+    <meta name="content-language" content="en" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="apple-touch-icon" href="icon.ico" />
+  <link rel="shortcut icon" href="res/img/icon.ico" />
+  <link rel="icon" type="image/x-icon" href="icon.ico">
+  <style>
+    body {
+      background: linear-gradient(135deg, #1e1e2f 30%, #2a2a3d 100%);
+      color: #cbd5e1;
+      font-family: 'Inter', sans-serif;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+
+    .header-logo {
+      background: url('icon.ico') no-repeat center center;
+      background-size: contain;
+      width: 60px;
+      height: 60px;
+      border: 3px solid #ffffff;
+      border-radius: 50%;
+      background-color: #ffffff;
+      padding: 5px;
+    }
+
+    .bg-gradient {
+      background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+    }
+
+    .hover-transform {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-transform:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .icon {
+      font-size: 2rem;
+      margin-right: 8px;
+    }
+
+    .support-card {
+      background: #1f2937;
+      padding: 16px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      color: #cbd5e1;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .support-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .support-icon {
+      font-size: 2.5rem;
+      margin-right: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 p-6 text-white shadow-lg flex justify-between items-center">
+    <div class="header-logo"></div>
+    <h1 class="text-3xl font-extrabold text-blue-400">TypeCode</h1>
+  </header>
+
+  <main class="container mx-auto p-8">
+    <section class="text-center mb-16">
+      <h2 class="text-6xl font-extrabold mb-6 text-blue-300 animate-pulse">Download TypeCode</h2>
+      <p class="text-xl text-gray-400">Available for both Linux and Windows. Choose your platform to get started.</p>
+    </section>
+
+    <section class="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-12 mb-16">
+      <div class="bg-gray-800 p-8 rounded-lg shadow-2xl w-full md:w-72 mx-auto md:mx-0 transform transition-transform hover:scale-105 hover:shadow-xl hover-transform">
+        <h3 class="text-2xl font-bold mb-4 text-blue-300">Linux</h3>
+        <div class="flex mb-4">
+          <i class="fab fa-linux icon text-gray-400"></i>
+          <i class="fab fa-ubuntu icon text-gray-400"></i>
+          <i class="fab fa-archlinux icon text-gray-400"></i>
+          <i class="fab fa-debian icon text-gray-400"></i>
+        </div>
+        <p class="text-gray-400 mb-6">Get the latest version for Linux.</p>
+        <a href="https://github.com/ReactMVC/TypeCode/releases/latest" class="bg-gradient text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out transform hover:-translate-y-1">Download</a>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-lg shadow-2xl w-full md:w-72 mx-auto md:mx-0 transform transition-transform hover:scale-105 hover:shadow-xl hover-transform">
+        <h3 class="text-2xl font-bold mb-4 text-blue-300">Windows</h3>
+        <div class="flex mb-4">
+          <i class="fab fa-windows icon text-gray-400"></i>
+          <span class="text-gray-400"> xp -</span>
+          <span class="text-gray-400"> 7 -</span>
+          <span class="text-gray-400"> 8 -</span>
+          <span class="text-gray-400"> 10 -</span>
+          <span class="text-gray-400"> 11 -</span>
+          <span class="text-gray-400"> ...</span>
+        </div>
+        <p class="text-gray-400 mb-6">Get the latest version for Windows.</p>
+        <a href="https://github.com/ReactMVC/TypeCode/releases/latest" class="bg-gradient text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out transform hover:-translate-y-1">Download</a>
+      </div>
+    </section>
+
+    <section class="text-center mb-16">
+      <h2 class="text-3xl font-bold mb-6 text-blue-300">Help Commands</h2>
+      <p class="text-xl text-gray-400">Learn how to use TypeCode with these commands.</p>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-2xl transform transition-transform hover:scale-105 hover:shadow-xl hover-transform">
+          <h3 class="text-2xl font-bold mb-4 text-blue-300">Terminal Commands</h3>
+          <pre class="bg-gray-900 p-4 rounded-lg text-left overflow-auto text-gray-300">
+<span class="text-green-500">!ver</span> Shows the current version of the application<br />
+<span class="text-green-500">!cls</span> Clear console<br />
+<span class="text-green-500">!kill</span> Kills the currently running process<br />
+<span class="text-green-500">!hello</span> Hello There :D<br />
+<span class="text-green-500">!dev</span> Open Chrome Devtools for the preview window<br />
+<span class="text-green-500">!settings</span> Open settings file<br />
+<span class="text-green-500">!lang_settings</span> Open language settings file<br />
+<span class="text-green-500">!exp_pdf</span> Generate and export PDF of the current preview panel<br />
+<span class="text-green-500">!help</span> Shows all the available commands
+                    </pre>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-2xl transform transition-transform hover:scale-105 hover:shadow-xl hover-transform">
+          <h3 class="text-2xl font-bold mb-4 text-blue-300">Keyboard Commands</h3>
+          <pre class="bg-gray-900 p-4 rounded-lg text-left overflow-auto text-gray-300">
+<span class="text-yellow-500">ctrl + o</span> Open a file<br />
+<span class="text-yellow-500">ctrl + b</span> Build and run the current file<br />
+<span class="text-yellow-500">ctrl + s</span> Save the current file<br />
+<span class="text-yellow-500">ctrl + n</span> Open a new editor window<br />
+<span class="text-yellow-500">ctrl + i</span> Open settings<br />
+<span class="text-yellow-500">ctrl + p</span> Export the preview window as PDF<br />
+<span class="text-yellow-500">ctrl + t</span> Open a hello world tamplate for the current language<br />
+<span class="text-yellow-500">ctrl + m</span> Evaluate a mathematical equation on the selected line<br />
+<span class="text-yellow-500">ctrl + ,</span> Open editor settings<br />
+<span class="text-yellow-500">ctrl + shift + b</span> Beautify the document<br />
+<span class="text-yellow-500">ctrl + shift + s</span> Save the current document as new file<br />
+<span class="text-yellow-500">ctrl + shift + x</span> Open/close terminal panel<br />
+<span class="text-yellow-500">ctrl + shift + t</span> Open/close preview panel
+                    </pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center mb-16">
+      <h2 class="text-3xl font-bold mb-6 text-blue-300">About TypeCode</h2>
+      <div class="bg-gray-800 p-8 rounded-lg shadow-2xl transform transition-transform hover:scale-105 hover:shadow-xl hover-transform mx-auto max-w-4xl">
+        <h3 class="text-2xl font-bold mb-4 text-blue-300">What is TypeCode?</h3>
+        <p class="text-gray-400 mb-6">TypeCode is an advanced IDE designed to provide a seamless coding experience. With support for multiple programming languages, real-time collaboration features, and a highly customizable interface, TypeCode is the perfect tool for developers of all skill levels.</p>
+      </div>
+    </section>
+
+    <section class="text-center mb-16">
+      <h2 class="text-3xl font-bold mb-6 text-blue-300">Support Us</h2>
+      <div class="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-12">
+        <a href="https://t.me/h3dev">
+          <div class="support-card">
+            <i class="fab fa-telegram-plane support-icon text-blue-400"></i>
+            <div>
+              <h3 class="text-xl font-bold">Telegram</h3>
+              <p class="text-gray-400">Contact us via Telegram</p>
+            </div>
+          </div>
+        </a>
+        <a href="mailto:h3dev.pira@gmail.com">
+          <div class="support-card">
+            <i class="fas fa-envelope support-icon text-red-400"></i>
+            <div>
+              <h3 class="text-xl font-bold">Email</h3>
+              <p class="text-gray-400">Contact us via Email</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 p-6 text-white text-center">
+    <p>&copy; TypeCode. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
